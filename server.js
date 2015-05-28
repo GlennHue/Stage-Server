@@ -5,7 +5,7 @@
 
 var restify = require('restify');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/AgCollab');
+mongoose.connect('mongodb://testUser:myPassword@c998.candidate.13.mongolayer.com:10998,candidate.12.mongolayer.com:11051/AgCollab?replicaSet=set-5566f7239fe003647e001190');
 userSchema = require('./models/user').User;
 projectSchema = require('./models/project').Project;
 boardSchema = require('./models/board').Board;
