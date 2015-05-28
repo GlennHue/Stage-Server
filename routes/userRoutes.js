@@ -17,7 +17,7 @@ exports.registerRoutes = function (app) {
     app.put('/user/resetpassword/confirm', confirmReset);
     app.post('/user/invitecoworkers', inviteCoWorkers);
     app.get('/user/findlike', findLike);
-    app.get('/', function(req, res, next) {
+    app.get('/:derp', function(req, res, next) {
         res.send("hello world");
     })
 };
