@@ -44,7 +44,7 @@ app.on('InternalError', function (req, res, err, cb) {
     res.send(err);
 });
 
-app.listen(6543, function() {
+app.listen(process.env.PORT || 5000, function() {
     console.log('%s listening at %s', app.name, app.url);
 });
 /*
