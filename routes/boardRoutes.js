@@ -2,10 +2,10 @@
  * Created by Glenn on 21-4-2015.
  */
 var async = require('async');
-var auth = require('././authenticationService');
+var auth = require('./../service/authenticationService');
 var errorHandler = require('./../response/errorHandler');
-var boardService = require('././boardService');
-var notifications = require('././notificationService');
+var boardService = require('./../service/boardService');
+var notifications = require('./../service/notificationService');
 
 exports.registerRoutes = function (app) {
     app.post('/board/create', createBoard, makeCreateBoardNotification);

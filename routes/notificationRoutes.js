@@ -1,8 +1,8 @@
 /**
  * Created by Glenn on 8-5-2015.
  */
-var auth = require('././authenticationService');
-var notificationService = require('././notificationService');
+var auth = require('./../service/authenticationService');
+var notificationService = require('./../service/notificationService');
 var errorHandler = require('./../response/errorHandler');
 
 exports.registerRoutes = function(app) {

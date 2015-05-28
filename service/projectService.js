@@ -1,7 +1,7 @@
 /**
  * Created by Glenn on 13-4-2015.
  */
-var projectValidator = require('././projectValidator');
+var projectValidator = require('./../validator/projectValidator');
 var projectRepo = require('./../repository/projectRepository');
 var mailService = require('./mailService');
 var config = require('./../config.json');

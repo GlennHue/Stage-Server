@@ -3,7 +3,7 @@
  */
 var async = require('async');
 var taskRepo = require('./../repository/taskRepository');
-var validator = require('././taskValidator');
+var validator = require('./../validator/taskValidator');
 var userService = require('./userService');
 var boardService = require('./boardService');
 var projectService = require('./projectService');

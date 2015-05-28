@@ -3,11 +3,11 @@
  */
 var async = require('async');
 var config = require('./../config.json');
-var projectService = require('././projectService');
+var projectService = require('./../service/projectService');
 var errorHandler = require('./../response/errorHandler');
-var userService = require('././userService');
-var auth = require('././authenticationService');
-var notifications = require('././notificationService');
+var userService = require('./../service/userService');
+var auth = require('./../service/authenticationService');
+var notifications = require('./../service/notificationService');
 
 exports.registerRoutes = function(app) {
     app.post('/project/create', createProject, makeNewNotifications);

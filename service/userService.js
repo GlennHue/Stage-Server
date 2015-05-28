@@ -8,7 +8,7 @@ var authService = require('./authenticationService');
 var _ = require('underscore');
 var fileHandler = require('./../handler/fileHandler');
 var uuid = require('node-uuid');
-var validator = require('././userValidator');
+var validator = require('./../validator/userValidator');
 var async = require('async');
 var config = require('./../config.json');
 

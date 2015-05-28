@@ -1,11 +1,11 @@
-var userService = require('././userService');
+var userService = require('./../service/userService');
 var resultFactory = require('./../response/resultFactory');
-var mailService = require('././mailService');
+var mailService = require('./../service/mailService');
 var config = require('./../config.json');
 var async = require('async');
-var projectService = require('././projectService');
+var projectService = require('./../service/projectService');
 var errorHandler = require('./../response/errorHandler');
-var auth = require('././authenticationService');
+var auth = require('./../service/authenticationService');
 
 exports.registerRoutes = function (app) {
     app.post('/register', register);

@@ -2,7 +2,7 @@
  * Created by Glenn on 21-4-2015.
  */
 var boardRepo = require('./../repository/boardRepository');
-var validator = require('././projectValidator');
+var validator = require('./../validator/projectValidator');
 var projectService = require('./projectService');
 var taskService = require('./taskService');
 var async = require('async');

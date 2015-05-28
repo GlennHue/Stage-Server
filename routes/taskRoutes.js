@@ -2,11 +2,11 @@
  * Created by Glenn on 24-4-2015.
  */
 var async = require('async');
-var auth = require('././authenticationService');
-var validator = require('././taskValidator');
-var taskService = require('././taskService');
+var auth = require('./../service/authenticationService');
+var validator = require('./../validator/taskValidator');
+var taskService = require('./../service/taskService');
 var errorHandler = require('./../response/errorHandler');
-var notifications = require('././notificationService');
+var notifications = require('./../service/notificationService');
 
 exports.registerRoutes = function(app) {
     app.post('/task/create', createTask, makeCreateTaskNotification);
